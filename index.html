@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="feedback-form">
+      <label>
+        Name:
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <span class="tooltip">Please enter your full name.</span>
+      </label>
+      <label>
+        Email:
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <span class="tooltip">We'll never share your email.</span>
+      </label>
+      <label>
+        Comments:
+        <textarea id="comments" placeholder="Your feedback..." required></textarea>
+        <div id="char-count">0 characters</div>
+      </label>
+      <button type="submit">Submit</button>
+      <div id="validation-message"></div>
+    </form>
+
+    <div id="feedback-display">
+      <h3>User Feedback</h3>
+    </div>
+  </div>
+
+  <script src="cp_1.js"></script>
+</body>
+</html>
